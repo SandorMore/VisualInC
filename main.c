@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    printf("nuggets");
+    int a = 45;
+    printf("%p", &a);
     return 0;
 }
