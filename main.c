@@ -7,7 +7,11 @@ int main(){
     glfwMakeContextCurrent(window);
 
     while(!glfwWindowShouldClose(window)){
-        
+        glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    
+       glfwPollEvents();
+       glfwSwapBuffers(window);
     }
    
    glfwDestroyWindow(window);
